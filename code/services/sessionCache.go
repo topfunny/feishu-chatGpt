@@ -111,7 +111,7 @@ func (s *SessionService) SetMode(sessionId string, mode SessionMode) {
 func (s *SessionService) GetAIMode(sessionId string) openai.AIMode {
 	sessionContext, ok := s.cache.Get(sessionId)
 	if !ok {
-		return openai.Balance
+		return openai.Creativity
 	}
 	sessionMeta := sessionContext.(*SessionMeta)
 	return sessionMeta.AIMode
