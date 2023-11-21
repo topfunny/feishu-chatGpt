@@ -12,7 +12,7 @@ type AIMode float64
 
 const (
 	Fresh      AIMode = 0.1
-	Warmth     AIMode = 0.7
+	Warmth     AIMode = 0.8
 	Balance    AIMode = 1.2
 	Creativity AIMode = 1.7
 )
